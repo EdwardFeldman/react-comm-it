@@ -1,0 +1,258 @@
+﻿<html>
+<head>
+<style>
+
+</style >
+<script src="//js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
+<script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
+						
+    <style>
+        .pure-material-button-contained {
+            position: relative;
+            display: inline-block;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 4px;
+            padding: 0 16px;
+            min-width: 64px;
+            height: 36px;
+            vertical-align: middle;
+            text-align: center;
+            text-overflow: ellipsis;
+            text-transform: uppercase;
+            color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+            background-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+            box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+            font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 36px;
+            overflow: hidden;
+            outline: none;
+            cursor: pointer;
+            transition: box-shadow 0.2s;
+            width: 100%
+        }
+
+            .pure-material-button-contained::-moz-focus-inner {
+                border: none;
+            }
+
+            /* Overlay */
+            .pure-material-button-contained::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+                opacity: 0;
+                transition: opacity 0.2s;
+            }
+
+            /* Ripple */
+            .pure-material-button-contained::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                border-radius: 50%;
+                padding: 50%;
+                width: 32px; /* Safari */
+                height: 32px; /* Safari */
+                background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(1);
+                transition: opacity 1s, transform 0.5s;
+            }
+
+            /* Hover, Focus */
+            .pure-material-button-contained:hover,
+            .pure-material-button-contained:focus {
+                box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+            }
+
+                .pure-material-button-contained:hover::before {
+                    opacity: 0.08;
+                }
+
+                .pure-material-button-contained:focus::before {
+                    opacity: 0.24;
+                }
+
+                .pure-material-button-contained:hover:focus::before {
+                    opacity: 0.3;
+                }
+
+            /* Active */
+            .pure-material-button-contained:active {
+                box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+            }
+
+                .pure-material-button-contained:active::after {
+                    opacity: 0.32;
+                    transform: translate(-50%, -50%) scale(0);
+                    transition: transform 0s;
+                }
+
+            /* Disabled */
+            .pure-material-button-contained:disabled {
+                color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+                background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.12);
+                box-shadow: none;
+                cursor: initial;
+            }
+
+                .pure-material-button-contained:disabled::before {
+                    opacity: 0;
+                }
+
+                .pure-material-button-contained:disabled::after {
+                    opacity: 0;
+                }
+				.search{
+				border-radius:0.6em;
+				padding:4px 10px;
+				border:2px indigo solid;
+				}
+				.btn-primary{
+background-color:indigo;
+color:white;
+border-radius:0.6em;
+padding:4px 10px;
+background:lineargradient(to bottom,RGBA(0,0,255,0.8),RGBA(255,255,255,0.8));
+cursor: pointer;
+
+}
+.btn:hover{
+cursor: hand;
+background:lineargradient(to bottom,RGBA(255,255,255,0.8),RGBA(0,0,255,0.8));
+color:white;
+border-radius:0.6em;
+padding:4px 10px;
+background-color:white;
+color:black;
+}
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div style="text-align: center; vertical-align: middle;height:10vh;background-color:#222;">
+
+        </div>
+        <div style="text-align: center; vertical-align: middle;height:10vh;transform:scaleX(1.2)"> <h1 class="jumbotron">Mineral Discussion</h1>  </div>
+    </header>
+    <main>
+
+        <content style="width:100% !important; height: 60vh !important;">
+            <aside style="width:20% !important">
+                <div style="padding: 10px 20px !important; background-color: white; border-radius:0.4em;border:1px solid black;float:left !important;height:60vh ">
+                    <h2>  <strong>  <em style="  padding:10px 30px !important;background-color:#333;color:#eee;text-align:center;border-radius:0.4em; ">Forum Menu </em></strong> </h2>
+
+                    <ul style="list-style-type: none;border-radius:0.4em; background-color: wheat;min-height:60%;padding:20px 0;">
+                        <li style="font-size: 1.1em !important;background-color:#111;color:white;white-space:nowrap;text-align:center">Rocks Forum Home</li>
+                        <li style="font-size: 1em !important"><button class="pure-material-button-contained">Request review</button></li>
+                        <li style="font-size: 1em !important"><button class="pure-material-button-contained">Submit Complain</button></li>
+                        <li style="font-size: 1em !important"><button class="pure-material-button-contained">Submit News</button></li>
+                        <li style="font-size: 1em !important"><button class="pure-material-button-contained">Suggest Moderation</button></li>
+                        <li style="font-size: 1em !important"><button class="pure-material-button-contained">Request review</button></li>
+
+                        <li>&nbsp</li>
+                        <li>&nbsp</li>
+                        <li style="font-size: 1em !important"><button class="pure-material-button-contained">Login</button></li>
+                    </ul>
+                </div>
+
+            </aside>
+            <div id="mycontent" style="width:80% !important;background-color: #eeeeee; box-shadow: inset 2px 20px 14px #dddddd;float:left !important">
+                <div style=" padding: 10px 20px !important;border-radius:0.4em;border:1px solid black;">
+                    <h4 >  <strong>  <em style=" border-radius:0.3em; box-shadow: inset 2px 2px 8px #dddddd; font-size: 1.2em !important; padding: 10px 30px !important; background-color: darkslateblue; font-weight: bold; color: white; width: 20% !important">Post/Reply Title: <input type="text" style="width:60%" value="Re:Meeting with Bobby Kent, the legend " /></em></strong>  <input id="search" style="float:right;font-size:0.8em;" type="search" placeholder="Search in forum " class="search"/> </h4>
+					<div><textarea rows="3" style="width:100%" placeholder="Write your post here..."></textarea></div>
+					<div style="width:70%"> </div><div style="width:30%"><button class="btn btn-primary">Submit Post / Reply</button> </div>
+                    <div>
+                        <table style="width:100%">
+                            <thead style="background-color: darkslateblue; font-weight: bold; color: white;width:100% !important">
+                                <tr style="width:100%">
+                                    <th style="width:70%">
+                                        <h5>
+                                            Replies
+                                        </h3>
+                                    </th>
+ 
+                                    <th style="width:10%">
+                                      <h5>  From Date</h5>
+                                    </th>
+                                    <th style="width:10%">
+                                        <h5>Replied By:</h5>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="width:100%">
+                                    <th style="width:70%;background-color: #FFFBD6; font-weight: bold; color: #333333;text-align:left;padding:10px 20px;">
+                                        <h5>
+                                           <a style="color:black" href="~\Threads.html?threadId=1"> 
+                                            Re:Meeting with Bobby Kent, the legend</a><label style="margin-left:10px;padding: 1px 4px; border: 1px solid black;font-size:0.6em;color:wheat;background-color:#222222; border-radius: 0 0.5em 0.5em 0 "> <em>Sticky</em> </label>
+                                        </h5>
+                                    </th>
+                                     <th style="width:10%;background-color: #FFFBD6; font-weight: bold; color: #333333;text-align:left;padding:10px 20px;">
+                                        <h6>2022, Jul 06, 08:32 AM</h6>
+                                    </th>
+                                    <th style="width:10%;background-color: #FFFBD6; font-weight: bold; color: #333333;text-align:left;padding:10px 20px;">
+                                        <h5> bobbyBrown@yahoo.com</h5>
+                                    </th>
+
+                                </tr>
+								<tr style="width:100%">
+                                    <th style="width:70%;background-color: #FFFBD6; font-weight: bold; color: #333333;text-align:left;padding:10px 20px;">
+                                        <h5>
+                                            <a style="color:black" href="~\Threads.html?threadId=1">
+                                                Re:Meeting with Bobby Kent, the legend</a>
+</h5>
+                                    </th>
+                                     <th style="width:10%;background-color: #FFFBD6; font-weight: bold; color: #333333;text-align:left;padding:10px 20px;">
+                                        <h6>2022, Jul 06, 08:32 AM</h6>
+                                    </th>
+                                    <th style="width:10%;background-color: #FFFBD6; font-weight: bold; color: #333333;text-align:left;padding:10px 20px;">
+                                        <h5> classicMoore</h5>
+                                    </th>
+
+                                </tr>
+                                <tr style="width:100%">
+                                    <th style="width:70%;background-color: #ffffff; font-weight: bold; color: #333333;text-align:left;padding:10px 20px;">
+                                        <h5>
+                                            <a style="color:black" href="~\Threads.html?threadId=3">
+                                                Re:Meeting with Bobby Kent, the legend
+                                            </a><label style="margin-left:10px;padding: 1px 4px; border: 1px solid black;font-size:0.6em;color:wheat;background-color:#222222; border-radius: 0 0.5em 0.5em 0 "> <em>Sticky</em> </label>
+                                        </h5>
+                                    </th>
+                                     <th style="width:10%;background-color: #ffffff; font-weight: bold; color: #333333;text-align:left;padding:10px 20px;">
+                                        <h6>2021, Jan 01, 10:32 AM</h6>
+                                    </th>
+                                    <th style="width:10%;background-color: #ffffff; font-weight: bold; color: #333333;text-align:left;padding:10px 20px;">
+                                        <h5>  HoundD</h5>
+                                    </th>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="padding: 10px 20px;">
+                        <button class="	fa fa-arrow-circle-left btn btn-primary" ID="LnkBtnPrev" style="min-width:50px;">Prev</button>
+                        <button  class="fa fa-arrow-circle-right btn btn-primary" ID="LnkBtnNext" style="min-width:50px;">Next</button>
+                    </div>
+ 
+                </div>
+            </div>
+        </content>
+
+    </main>
+    <footer style=" width: 100% !important; height: 10vh !important; text-align: center; vertical-align: middle; height: 10vh; background-color: #444;color:white;float:left;">
+
+        &copy; 2022
+
+    </footer>
+</body>
+</html>
