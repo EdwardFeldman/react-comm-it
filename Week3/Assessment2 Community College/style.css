@@ -1,0 +1,156 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+ }
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+.body-text-font{
+	
+}/* 
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('Roboto Slab.eot');
+  src: local('Roboto Slab'), local('DM Serif Text'),
+         url('GraublauWeb.otf') format('opentype');
+}*/
+
+ body{
+	 font-family: 'DM Serif Text', serif;
+	 font-size : 10px;
+	 line-height:1.4em;
+	 letter-spacing :0.0002em;
+	 word-spacing:0.4em;
+ }
+ h1,h2{
+	 letter-spacing:0.2em;
+	 text-decoration:underline double 1px;
+	  	text-underline-offset:0.4em;
+	 
+ }
+h1{
+	font-family: 'Roboto Slab' , serif;
+	font-size:2.8em;
+
+	 color :white;
+	text-shadow: 1px 1px 4px #000000;
+	text-align:center;
+
+ }
+h2{
+	font-family: 'Roboto Slab' , serif;
+	font-size:1.6em;
+
+}
+section > h1+p {
+	text-indent:20px;
+	
+}
+section > h2+p {
+	text-indent:20px;
+	
+}
+a{
+	text-decoration:enabled;
+	outline:none;
+}
+
+a:hover{
+	 text-decoration:none;
+	
+}
+a:visited, a:focus,a:hover{
+	color:#a66;
+	}  
+a[href^="http"] {
+  background: url('images/external-link-52.png') no-repeat 100% 0;
+  background-size: 12px 12px;
+  padding-right: 16px;
+}
+a:active{
+	color:white !important;
+	background:red;
+	min-width:100%;
+}
+nav{
+ 
+		display:inline-flex;
+		flex-direction:row;
+}
+ nav ul
+{
+	list-style-type:none;
+	padding-top:6px;
+}
+ nav li
+{
+	padding:16px 30px;
+	border:1px double #a66;
+	margin-right:10px;
+	margin-bottom:0.6em;
+	display:block;
+	font-size:1.6em;
+	text-decoration:none;
+	text-align:center;
+	background-color: #CCCCFF;
+	
+}
+ nav li > a {
+	 
+	 	text-decoration:none;
+		min-width:100%;
+		min-height:100%;
+	
+ }
+  nav li > a :active,nav li > a :hover{
+	 
+	 	text-decoration:none;
+		min-width:100%;
+		min-height:100%;
+	
+ }
+footer {
+    background-color: #CCCCFF;
+    margin-top: auto;
+	text-align:center;
+}
+ 
