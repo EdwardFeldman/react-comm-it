@@ -105,12 +105,80 @@
                 .pure-material-button-contained:disabled::after {
                     opacity: 0;
                 }
+
+        body, html {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            gap: 0.515%;
+        }
+
+        a {
+            flex: 1;
+            text-decoration: none;
+            outline: none;
+            text-align: center;
+            line-height: 3;
+            background: url("/images/backrocks.jpg");
+            background-repeat: repeat-x;
+            background-position: center;
+            background-size: cover;
+            padding: 4px 6px;
+            box-shadow: 1px 1px 4px #222;
+ 
+        }
+
+            nav > a:link, a:visited, a:focus {
+                /**/
+                background: linear-gradient(to top,white 20%,#222 );
+                color: white;            
+            }
+
+        nav > a:hover {
+            background: url("/images/backrocks.jpg");
+            background-repeat: repeat-x;
+            background-position: center;
+            background-size: cover;
+            padding: 4px 6px;
+            color: white;
+        }
+
+        nav > a:active {
+            background: url("/images/backrocks.jpg");
+            background-repeat:repeat-x;
+            background-position: center;
+            background-size: cover;
+            padding: 4px 6px;
+            color: red;
+        }
+
+ 
+
+        a[href^="http"] {
+            background: url('linkout.png') no-repeat 100% 0;
+            background-size: 16px 16px;
+            padding-right: 19px;
+            box-shadow: none;
+            color: aqua;
+            background-color: #666;
+        }
+
     </style>
 </head>
 <body>
     <header id="header">
-        <div style="text-align: center; vertical-align: middle;height:10vh;background-color:#222;">
 
+        <div style="text-align: center; vertical-align: middle;height:10vh;background-color:#222;">
+            <nav class="container">
+                <a class="fa fa-home" href="#">&nbsp;</a>
+                <a href="#">Pizza</a>
+                <a href="#">Music</a>
+                <a href="#">Wombats</a>
+                <a href="#">Finland</a>
+            </nav>
         </div>
         <div style="text-align: center; vertical-align: middle;height:10vh;transform:scaleX(1.2)"> <h1 class="jumbotron">Mineral Discussion</h1>  </div>
     </header>
