@@ -1,4 +1,5 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html>
 <head>
     <style>
         .pure-material-button-contained {
@@ -115,38 +116,66 @@
             display: flex;
             gap: 0.515%;
         }
-
-        a {
+        @media only screen and (max-width: 600px) {
+            nav > a {
+                flex: 1;
+                flex-direction:column;
+            }
+        }
+        nav > a {
             flex: 1;
+            flex-direction: row;
             text-decoration: none;
             outline: none;
             text-align: center;
-            line-height: 3;
+            line-height: 2;
+            font-size: 1.3em;
             background: url("/images/backrocks.jpg");
             background-repeat: repeat-x;
             background-position: center;
             background-size: cover;
             padding: 4px 6px;
             box-shadow: 1px 1px 4px #222;
- 
+            border-radius: 0.3em;
+            height: 34px;
         }
 
             nav > a:link, a:visited, a:focus {
                 /**/
-                background: linear-gradient(to top,white 20%,#222 );
-                color: white;            
+                background: url("./images/backrocks.jpg");
+                background-repeat: repeat-x;
+                background-position: center;
+                background-size: cover;
+                /*        background: radial-gradient(to top, #111, 78%  ,#aaa  );*/
+                color: gold;
+                padding: 4px 6px;
+
             }
 
-        nav > a:hover {
-            background: url("/images/backrocks.jpg");
-            background-repeat: repeat-x;
-            background-position: center;
-            background-size: cover;
-            padding: 4px 6px;
-            color: white;
+            nav > a:hover {
+                background: linear-gradient(to top,white,#111 80%,white );
+                padding: 4px 6px;
+                color: gold;
+                text-decoration: 2px underline double gold;
+                text-underline-offset: 1rem;
+                text-underline-offset: 2rem;
+                transition: opacity linear 1s;
+                animation: kuku ease-in 1s;
+
+            }
+        @keyframes kuku {
+            from {
+                opacity: 0;
+                text-decoration:none;
+            }
+
+            to {
+                opacity: 1;
+                text-decoration: 2px underline double gold;
+            }
         }
 
-        nav > a:active {
+                nav > a:active {
             background: url("/images/backrocks.jpg");
             background-repeat:repeat-x;
             background-position: center;
@@ -155,17 +184,43 @@
             color: red;
         }
 
- 
+
 
         a[href^="http"] {
-            background: url('linkout.png') no-repeat 100% 0;
+            background: url('/images/linkout.png') no-repeat 100% 0;
             background-size: 16px 16px;
             padding-right: 19px;
             box-shadow: none;
             color: aqua;
             background-color: #666;
+            height:20px;
         }
-
+        #cut-diamond {
+            border-style: solid;
+            border-color: transparent transparent gold transparent;
+            border-width: 0 25px 25px 25px;
+            height: 0;
+            width: 50px;
+            box-sizing: content-box;
+            position: relative;
+            margin: 20px 10px 50px 20px;
+            transform: scale(0.5);
+        }
+ 
+            #cut-diamond:after {
+                content: "";
+                position: absolute;
+                top: 25px;
+                left: -25px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-color: gold transparent transparent transparent;
+                border-width: 70px 50px 0 50px;
+                transform: scale(0.9);
+               
+            }
+  
     </style>
 </head>
 <body>
@@ -173,11 +228,12 @@
 
         <div style="text-align: center; vertical-align: middle;height:10vh;background-color:#222;">
             <nav class="container">
-                <a class="fa fa-home" href="#">&nbsp;</a>
-                <a href="#">Pizza</a>
-                <a href="#">Music</a>
-                <a href="#">Wombats</a>
-                <a href="#">Finland</a>
+                <span id="cut-diamond" ></span>
+                <a class="fa fa-home" style="color:gold" href="#"> Rocks&Minerals</a>
+                <a href="#">Home</a>
+                <a href="#">Rocks Processing & Shaping</a>
+                <a href="#">Rocks in Jewelry & Design</a>
+                <a href="#">Mental & Physical Sides of Rocks</a>
             </nav>
         </div>
         <div style="text-align: center; vertical-align: middle;height:10vh;transform:scaleX(1.2)"> <h1 class="jumbotron">Mineral Discussion</h1>  </div>
